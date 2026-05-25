@@ -1,0 +1,11 @@
+{
+  "name": "@new-project/api",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "node -e \"console.log('api dev placeholder')\"",
+    "build": "node -e \"console.log('api build placeholder')\"",
+    "lint": "node -e \"console.log('api lint placeholder')\"",
+    "test": "node -e \"console.log('api test placeholder')\""
+  }
+}
