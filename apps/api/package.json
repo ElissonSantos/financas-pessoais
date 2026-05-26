@@ -3,9 +3,32 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "node -e \"console.log('api dev placeholder')\"",
-    "build": "node -e \"console.log('api build placeholder')\"",
-    "lint": "node -e \"console.log('api lint placeholder')\"",
-    "test": "node -e \"console.log('api test placeholder')\""
+    "dev": "node ./node_modules/@nestjs/cli/bin/nest.js start --watch",
+    "build": "node ./node_modules/@nestjs/cli/bin/nest.js build",
+    "start": "node dist/main.js",
+    "lint": "node ./node_modules/eslint/bin/eslint.js \"src/**/*.ts\"",
+    "test": "node ./node_modules/vitest/vitest.mjs run"
+  },
+  "dependencies": {
+    "@nestjs/common": "^10.4.15",
+    "@nestjs/core": "^10.4.15",
+    "@nestjs/jwt": "^10.2.0",
+    "@nestjs/platform-express": "^10.4.15",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.2",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.1"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "^10.4.9",
+    "@nestjs/testing": "^10.4.15",
+    "@types/node": "^22.10.2",
+    "@types/supertest": "^6.0.2",
+    "eslint": "^9.17.0",
+    "supertest": "^7.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.18.1",
+    "vitest": "^2.1.8"
   }
 }

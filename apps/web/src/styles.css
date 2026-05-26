@@ -1,0 +1,26 @@
+:root {
+  font-family: system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+.container {
+  max-width: 420px;
+  margin: 4rem auto;
+  padding: 1.25rem;
+}
+
+form {
+  display: grid;
+  gap: 0.75rem;
+}
+
+input,
+button {
+  font: inherit;
+  padding: 0.5rem 0.75rem;
+}
